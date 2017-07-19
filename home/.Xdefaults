@@ -1,0 +1,105 @@
+! General
+!urxvt*termName:  rxvt-256color
+urxvt*loginShell:         true
+urxvt*scrollBar:         false
+urxvt*secondaryScroll:    true
+urxvt*saveLines:         65535
+urxvt*cursorBlink:        true
+urxvt*urgentOnBell:       true
+!urxvt*override-redirect:false
+!urxvt*borderLess:       false
+!urxvt*internalBorder:       0
+!urxvt*externalBorder:       0
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
+
+! Extensions
+urxvt*perl-lib:        /usr/lib/urxvt/perl/
+urxvt*perl-ext-common: default,matcher,searchable-scrollback,font-size
+urxvt*urlLauncher:     /usr/bin/chromium-browser
+urxvt*matcher.button:  1
+!  - catch ugly URLs
+urxvt.cutchars:        `()'*<>[]{|}"
+
+! Appearance
+!  - use a bitmap font
+!urxvt*font:        -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+!urxvt*boldFont:    -xos4-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
+!  - use xft for drawing fonts
+!urxvt*font:       xft:Terminus:8
+!urxvt*font:           -misc-fixed-medium-r-semicondensed-*-12-90-100-*-c-60-iso8859-1
+!urxvt*font:        -b&h-luxi mono-medium-o-normal--0-0-0-0-m-0-iso8859-1
+!urxvt*font:       xft:dejavu sans mono:size=8
+!urxvt*font:       xft:bitstream vera sans mono:size=8:antialias=true
+!urxvt*boldFont:   xft:bitstream vera sans mono:bold:size=8:antialias=true
+!urxvt*font: xft:Input-Regular:size=6:antialias=true:hint=true
+
+xft*dpi: 96
+xft*antialias: true
+xft*hinting: true
+xft*hintstyle: hintfull
+
+urxvt.keysym.C-S-Up: perl:font-size:incglobal
+urxvt.keysym.C-S-Down: perl:font-size:decglobal
+
+!  - cursor
+!urxvt*cursorColor: #DCDCCC
+urxvt*cursorColor: #00FF00
+!  - pseudo transparency
+urxvt*shading:    20
+urxvt*transparent:true
+
+!  - color scheme
+urxvt.background:  #000000
+urxvt.foreground:  #9a9a9a
+!! black + red
+!urxvt*color0:     #3f3f3f
+!!urxvt*color0:      #000000
+!urxvt*color1:      #e01010
+!! green + yellow
+!urxvt*color2:      #00AF00
+!urxvt*color3:      #AFAF00
+!! blue + purple
+!urxvt*color4:      #112037
+!urxvt*color5:      #A020F0
+!! cyan + white
+!urxvt*color6:      #00afaf
+!urxvt*color7:      #fefefe
+!! bright-black + bright-red
+!urxvt*color8:      #6a6a6a
+!urxvt*color9:      #FF5555
+!! bright-green + bright-yellow
+!urxvt*color10:     #00d700
+!urxvt*color11:     #d7d700
+!! bright-blue + bright-purple
+!urxvt*color12:     #5B5BC7
+!urxvt*color13:     #e628ba
+!! bright-cyan + bright-white
+!urxvt*color14:     #00d7d7
+!urxvt*color15:     #d7d7d7
+!
+! black
+*color0:  #2E3436
+*color8:  #555753
+! red
+*color1:  #a40000
+*color9:  #EF2929
+! green
+*color2:  #4E9A06
+*color10: #8AE234
+! yellow
+*color3:  #C4A000
+*color11: #FCE94F
+! blue
+*color4:  #3465A4
+*color12: #729FCF
+! purple
+*color5:  #75507B
+*color13: #AD7FA8
+! orange (replaces cyan)
+*color6:  #ce5c00
+*color14: #fcaf3e
+! white
+*color7:  #babdb9
+*color15: #EEEEEC
