@@ -102,6 +102,8 @@ export VISUAL=$EDITOR
 
 
 # Setup homeshick
+export DOTS=$HOME/.homesick
+export HOSTCLASS=${$(hostname)%%[.0-9]*}
 source $DOTS/repos/homeshick/homeshick.sh
 fpath=($DOTS/repos/homeshick/completions $fpath)
 
