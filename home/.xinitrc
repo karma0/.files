@@ -23,7 +23,6 @@ synclient TapButton1=1 &
 
 # Set keyboard layout
 xkbcomp -w 0 ~/.xkbmap $DISPLAY
-[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
 
 # Run i3 Window Manager
