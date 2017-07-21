@@ -144,3 +144,5 @@ command -v zsh >/dev/null 2>&1 && exec zsh
 # Host specific proflie additions
 [ -f ~/.dotfiles/hosts/"$host"/bashrc ] && source ~/.dotfiles/hosts/"$host"/bashrc
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
