@@ -1,3 +1,3 @@
 export TERMINAL=termite
-export ALSA_CARD=PCH
+#export ALSA_CARD=Intel
 

@@ -21,9 +21,5 @@ fi
 synclient TapButton1=1 &
 
 
-# Set keyboard layout
-xkbcomp -w 0 ~/.xkbmap $DISPLAY
-
-
 # Run i3 Window Manager
 exec i3

@@ -110,7 +110,7 @@ color20 = #839496
 color21 = #eee8d5
 
 # 20% background transparency (requires a compositor)
-background = rgba(0, 0, 0, 0.8)
+background = rgba(25, 25, 25, 0.8)
 
 [hints]
 #font = Monospace 12
