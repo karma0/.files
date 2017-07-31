@@ -1,0 +1,63 @@
+!! black
+!*color0:  #2E3436
+!*color8:  #555753
+!! red
+!*color1:  #a40000
+!*color9:  #EF2929
+!! green
+!*color2:  #4E9A06
+!*color10: #8AE234
+!! yellow
+!*color3:  #C4A000
+!*color11: #FCE94F
+!! blue
+!*color4:  #3465A4
+!*color12: #729FCF
+!! purple
+!*color5:  #75507B
+!*color13: #AD7FA8
+!! orange (replaces cyan)
+!*color6:  #ce5c00
+!*color14: #fcaf3e
+!! white
+!*color7:  #babdb9
+!*color15: #EEEEEC
+
+! Ayu-dark
+! Black, Gray, Silver, White
+*color0 : #0f1419
+*color8 : #5c6773
+*color7 : #e6e1cf
+*color15: #fdf6e3
+
+! Red
+*color1 : #ff3333
+*color9 : #f07178
+
+! Green
+*color2 : #95e6cb
+*color10: #c2d94c
+
+! Yellow
+*color3 : #ffb454
+*color11: #e6b673
+
+! Blue
+*color4 : #36a3d9
+*color12: #50b4e6
+
+! Purple
+*color5 : #d4bfff
+*color13: #a37acc
+
+! Teal
+*color6 : #5ccfe6
+*color14: #95e6cb
+
+! Extra colors
+*color16: #e6b673
+*color17: #ff7733
+*color18: #e7c547
+*color19: #ffee99
+*color20: #ffae57
+*color21: #ffc44c
