@@ -4,10 +4,14 @@
 export DOTS=$HOME/.homesick
 export HOSTCLASS=${$(hostname)%%[.0-9]*}
 
+# Host-specific xinit
+[[ -f $DOTS/hosts/$HOSTCLASS/.xinitrc ]] && \
+    source $DOTS/hosts/$HOSTCLASS/.xinitrc 
+
 # X Resources
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
-[[ -f ~/$DOTS/hosts/$HOSTCLASS/.Xresources ]] && \
-    xrdb -merge -I$HOME ~/$DOTS/hosts/$HOSTCLASS/.Xresources
+[[ -f $DOTS/hosts/$HOSTCLASS/.Xresources ]] && \
+    xrdb -merge -I$HOME $DOTS/hosts/$HOSTCLASS/.Xresources
 
 
 # Gnome keyring
