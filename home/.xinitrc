@@ -25,5 +25,8 @@ fi
 synclient TapButton1=1 &
 
 
+# hide mouse coursor when it isn't used
+unclutter -root -visible &
+
 # Run i3 Window Manager
 exec i3
