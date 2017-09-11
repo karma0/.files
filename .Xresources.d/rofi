@@ -3,11 +3,11 @@ rofi.modi:                           run
 ! "Window width" Set from: Commandline
 rofi.width:                          100
 ! "Number of lines" Set from: Commandline
-rofi.lines:                          2
+rofi.lines:                          30
 ! "Number of columns" Set from: Commandline
 rofi.columns:                        9
 ! "Font to use" Set from: Commandline
-rofi.font:                           mono 10
+!rofi.font:                           mono 10
 ! "Color scheme for normal row" Set from: Commandline
 rofi.color-normal:                   #222222, #b1b4b3, #222222, #005577, #b1b4b3
 ! "Color scheme for urgent row" Set from: Commandline
