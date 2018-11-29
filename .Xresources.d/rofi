@@ -161,7 +161,7 @@ rofi.fake-transparency:              true
 ! "Go to the last entry" Set from: Default
 ! rofi.kb-row-last:                    End,KP_End
 ! "Set selected item as input text" Set from: Commandline
-rofi.kb-row-select:                  Tab
+! rofi.kb-row-select:                  Tab
 ! "Take a screenshot of the rofi window" Set from: Default
 ! rofi.kb-screenshot:                  Alt+S
 ! "Toggle case sensitivity" Set from: Default

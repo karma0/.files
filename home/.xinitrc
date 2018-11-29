@@ -16,14 +16,16 @@ export HOSTCLASS=${$(hostname)%%[.0-9]*}
 
 # Gnome keyring
 if [ -n "$DESKTOP_SESSION" ];then
+    dbus-update-activation-environment --systemd DISPLAY
     eval $(gnome-keyring-daemon --start)
     export SSH_AUTH_SOCK
 fi
 
+# P4
+export P4IGNORE=$HOME/.p4ignore
 
 # Turn on mouse pad tap
 synclient TapButton1=1 &
-
 
 # hide mouse coursor when it isn't used
 unclutter -root -visible &
