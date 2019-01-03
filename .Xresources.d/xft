@@ -1,3 +1,4 @@
+Xft.dpi: 96.0
 xft*dpi: 96
 xft*antialias: true
 xft*hinting: true
