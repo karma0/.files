@@ -8,6 +8,10 @@ export HOSTCLASS=${$(hostname)%%[.0-9]*}
 [[ -f $DOTS/hosts/$HOSTCLASS/.xinitrc ]] && \
     source $DOTS/hosts/$HOSTCLASS/.xinitrc 
 
+# Host-specific screen layout
+[[ -f $DOTS/hosts/$HOSTCLASS/screenlayout.sh ]] && \
+    $DOTS/hosts/$HOSTCLASS/screenlayout.sh 
+
 # X Resources
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 [[ -f $DOTS/hosts/$HOSTCLASS/.Xresources ]] && \
