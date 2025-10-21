@@ -1,0 +1,101 @@
+# open terminal
+alt - return : open -n /Applications/Alacritty.app
+
+
+# change window focus within space
+alt - n : yabai -m window --focus south
+alt - e : yabai -m window --focus north
+alt - y : yabai -m window --focus west
+alt - o : yabai -m window --focus east
+
+# change window focus within space using arrows
+alt - down  : yabai -m window --focus south
+alt - up    : yabai -m window --focus north
+alt - left  : yabai -m window --focus west
+alt - right : yabai -m window --focus east
+
+#change focus between external displays (left and right)
+alt - s: yabai -m display --focus west
+alt - g: yabai -m display --focus east
+
+
+ctrl + alt - s : yabai -m window --toggle split
+
+# rotate layout clockwise
+shift + alt - r : yabai -m space --rotate 270
+
+# flip along y-axis
+#shift + alt - h : yabai -m space --mirror y-axis
+shift + alt - h : yabai -m config split_type horizontal
+
+# flip along x-axis
+#shift + alt - v : yabai -m space --mirror x-axis
+shift + alt - v : yabai -m config split_type vertical
+
+# toggle window float
+shift + alt - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+
+# maximize a window
+alt - f : yabai -m window --toggle zoom-fullscreen
+
+# balance out tree of windows (resize to occupy same area)
+shift + alt - b : yabai -m space --balance
+
+
+# swap windows
+shift + alt - n : yabai -m window --swap south
+shift + alt - e : yabai -m window --swap north
+shift + alt - y : yabai -m window --swap west
+shift + alt - o : yabai -m window --swap east
+
+# swap windows using arrows
+shift + alt - down  : yabai -m window --swap south
+shift + alt - up    : yabai -m window --swap north
+shift + alt - left  : yabai -m window --swap west
+shift + alt - right : yabai -m window --swap east
+
+
+# set insertion point in focused container
+alt + ctrl - n : yabai -m window --insert south
+alt + ctrl - e : yabai -m window --insert north
+alt + ctrl - y : yabai -m window --insert west
+alt + ctrl - o : yabai -m window --insert east
+
+# set insertion point in focused container using arrows
+alt + ctrl - down  : yabai -m window --insert south
+alt + ctrl - up    : yabai -m window --insert north
+alt + ctrl - left  : yabai -m window --insert west
+alt + ctrl - right : yabai -m window --insert east
+
+
+# move window to display left and right
+shift + alt - s : yabai -m window --display west; yabai -m display --focus west;
+shift + alt - g : yabai -m window --display east; yabai -m display --focus east;
+
+
+#move window to prev and next space
+shift + alt - d : yabai -m window --space prev;
+shift + alt - u : yabai -m window --space next;
+
+# move window to space #
+shift + alt - 1 : yabai -m window --space 1;
+shift + alt - 2 : yabai -m window --space 2;
+shift + alt - 3 : yabai -m window --space 3;
+shift + alt - 4 : yabai -m window --space 4;
+shift + alt - 5 : yabai -m window --space 5;
+shift + alt - 6 : yabai -m window --space 6;
+shift + alt - 7 : yabai -m window --space 7;
+shift + alt - 8 : yabai -m window --space 8;
+shift + alt - 9 : yabai -m window --space 9;
+
+
+# stop/start/restart yabai
+ctrl + alt - q : brew services stop yabai
+ctrl + alt - s : brew services start yabai
+ctrl + alt - r : brew services restart yabai
+
+# switch to new workspace
+cmd - left : yabai -m space --focus prev
+cmd - right : yabai -m space --focus next
+
